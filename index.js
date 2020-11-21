@@ -250,7 +250,7 @@ function get20s(arr){
     let years = obj.years.split(" - ");
     let born = parseInt(years[0]);
     let died = parseInt(years[1]);
-    return born >= 1900 && died < 2000;
+    return born > 1900 && died <= 2000;
   }).map(obj => obj.name);
 }
 
