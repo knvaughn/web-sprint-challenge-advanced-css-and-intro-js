@@ -340,11 +340,20 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(data){
 
-    /* Code here */
-
+  for(let key in data) {
+    let obj = artists[key];
+    let html = '';
+    html += `<div class="artist">`;
+    html += `<div class="image"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/></div>`;
+    html += `<div class="name"><a href="${obj.wikipedia}">${obj.name}</a></div>`;
+    html += `<div class="bio">${obj.bio}</div>`;
+    html += `</div>`;
+    console.log(html);
   }
+
+}
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪

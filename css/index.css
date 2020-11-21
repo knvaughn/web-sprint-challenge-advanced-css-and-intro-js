@@ -134,6 +134,10 @@ button:hover{
 .artist img{
     width:100%;
 }
+.artist .name {
+    margin: 0;
+    font-weight: 500;
+}
 /*Responsive*/
 @media screen and (max-width: 600px) {
     nav {
